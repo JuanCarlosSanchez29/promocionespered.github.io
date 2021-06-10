@@ -1,0 +1,120 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(192, 192, 192);
+}
+
+.contenedor_principal {
+    background: rgb(255, 255, 255);
+}
+
+
+/* NAVBAR */
+
+.nav_ul {
+    justify-content: center;
+    display: flex;
+    /* border-bottom: 3px solid rgb(0, 102, 255); */
+}
+
+.nav_li {
+    list-style: none;
+    transition: all 300ms;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+
+.nav_a {
+    position: relative;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.nav_a:before {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background: rgb(0, 102, 255);
+    transition: all 200ms;
+}
+
+.nav_a:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.contenedor_imagen_nav {
+    width: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+
+.nav_logo {
+    margin-top: 10px;
+    width: 100%;
+}
+
+
+/* FOOTER */
+
+.contenedor_footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    background-image: url(/promociones/img/footer.png);
+    background-attachment: fixed;
+    padding: 25px;
+    /* background: rgb(0, 153, 255); */
+}
+
+.contendor_texto_footer {
+    color: white;
+    width: 30%;
+    text-align: center;
+}
+
+.h3_footer {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.contenedor_btn_footer {
+    margin: 30px;
+}
+
+.btn_footer {
+    background: black;
+    padding: 16px 21px;
+    border: 3px solid white;
+}
+
+.btn_a_footer {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    transition: all 300ms;
+}
+
+.btn_footer:hover {
+    transition: all 300ms;
+    background: white;
+    border: 3px solid black;
+}
+
+.btn_footer:hover .btn_a_footer {
+    transform: scale(1.2);
+    color: black;
+}
